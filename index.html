@@ -1,0 +1,22 @@
+!<doctype html>
+<html> 
+<head>
+</head>
+<body>
+<script>
+function foo(){
+	console.log(this.a);
+	}
+	var obj1 = {
+	a: 2,
+	foo: foo
+	}
+		var obj2 = {
+	a: 3,
+	foo: foo
+	}
+	foo();
+
+</script>
+</body>
+</html>
